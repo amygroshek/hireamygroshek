@@ -1,17 +1,27 @@
 <div class="container">
-  <div class="user-details">
-    <h3> Featured Projects </h3>
-  </div>
-  <div class="row user-projects">
-    <div class="six columns images">
-      <img alt="Laurel's Yoga Site" src="{{ "/assets/img/laurelyoga.png" | prepend: site.baseurl }}" />
+    <div class="user-details">
+        <h3> Featured Projects </h3>
     </div>
-    <div class="six columns contents">
-      <h5>laurelyoga.com</h5>
-      <p>Laurel needed a robust online promotion, scheduling, and marketplace solution. The theme Laurel had selected required some custom CSS and JavaScript to get things looking the way she wanted. And several plugins needed specific configurations. We did development in stages, using separate production and test environments to handle code pulls and site upgrades.</p>
-      <p>Skills: Wordpress, CSS, JavaScript</p>
-      <a class="project-link" href="http://laurelyoga.com/">Check it out</a>
+    <div class="row user-projects">
+        <div class="six columns images">
+            <img alt="Laurel's Yoga Site" src="{{ "/assets/img/laurelyoga.png" | prepend: site.baseurl }}" />
+        </div>
+        <div class="six columns contents">
+            <h5>laurelyoga.com</h5>
+            <p>Laurel needed a robust online promotion, scheduling, and marketplace solution. The theme Laurel had selected required some custom CSS and JavaScript to get things looking the way she wanted. And several plugins needed specific configurations. We did development in stages, using separate production and test environments to handle code pulls and site upgrades.</p>
+            <p>Skills: Wordpress, CSS, JavaScript</p>
+            <a class="project-link" href="http://laurelyoga.com/">Check it out</a>
+        </div>
     </div>
-  </div>
-  <!-- to add another project add another row here -->
+    <div class="row user-projects">
+        <div class="six columns">
+            <img alt="Moodle tracker" src="{{ "/assets/img/mdl_tracker.png" | prepend: site.baseurl }}" />
+        </div>
+        <div class="six columns">
+            <h5>Moodle Core Contributions</h5>
+            <p>My most important contributions to Moodle core to date (<a href="https://moodle.org/dev/gitcommits.php?version=x.x.x&userid=159280&merges=0">13 total</a>). <a href="https://tracker.moodle.org/browse/MDL-57785">MDL-57785</a> reduces server load by eliminating a navigation menu refresh when the navigation menu is not shown in the display. <a href="https://tracker.moodle.org/browse/MDL-60478">MDL-60478</a> improves performance of the network connectivity check performed during SCORM sessions, increasing the interval at which checks were performed, increasing the request timeout value to prevent false positives, and reducing the default number of alerts shown to 1.</p>
+            <p>Skills: PHP, YUI, JavaScript, Grunt, git, Travis, SCORM</p>
+            <a class="project-link" href="https://tracker.moodle.org/browse/MDL-60478">Check it out</a>
+        </div>
+    </div>
 </div>
