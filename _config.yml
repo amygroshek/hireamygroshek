@@ -1,13 +1,13 @@
 # Site settings
 title: Amy Groshek
-description: Freelance Web development, Moodle and SCORM consulting, editing, and writing
+description: Web developer specializing in online learning
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Amy Groshek
-user_description: Hi. I'm a freelance web developer, writer, and editor. I'm also a PhD student in English Literature at the University of Wisconsin Madison. I have 10 years of experience in the online learning industry, working mostly with the Moodle LMS.
-user_title: Web Developer, Writer, Editor, Consultant
+user_description: Hi. I'm a freelance web developer specializing in online learning, including SCORM, Moodle, and WordPress plugins like LearnDash, Edwiser, and WPLMS. I'm also a PhD student in English Literature at the University of Wisconsin Madison. I have 10 years of experience in the online learning industry, and I got my start doing front-end and PHP development for the Moodle LMS.<br><br>The thing I love most about freelancing is the flexibility it offers me to learn new programming langauges and frameworks. I'm enthusiatic about projects that offer me the opportunity to build elegant, efficient, and future-forward solutions.
+user_title: Web Developer and Online Learning Consultant
 email: amy@amygroshek.com
 twitter_username: amygroshek
 github_username:  amygroshek
