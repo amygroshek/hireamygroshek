@@ -16,7 +16,7 @@ linkedin_username:  amy-groshek-b7a2683
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-126172720-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
 
