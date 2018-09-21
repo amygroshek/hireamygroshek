@@ -4,5 +4,16 @@
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery-1.10.1.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/reportcard/js/reportcard.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script>
+jQuery(document).ready(function($) {
+    $('.report-card.treehouse').reportCard({
+        userName: 'amygroshek',
+        site: 'treehouse',
+        badgesAmount: 12
+    });
+});
+</script>
 {% include google-analytics.html %}
