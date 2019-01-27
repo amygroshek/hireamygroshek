@@ -22,3 +22,5 @@ exclude: ['package.json', 'src' , 'node_modules']
 
 sass:
     sass_dir: _sass
+
+theme: jekyll-theme-cayman
