@@ -2,12 +2,17 @@ $main: #0a35c3; // #0B41F7; // #13a528; // #1a222c;
 $sec: #4B5664;
 $purple: #54516A;
 $cut: 768px;
+// $link: #0a35c3;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+
+  a {
+    color: $main;
+  }
 }
 
 @-webkit-keyframes pulse {
@@ -251,8 +256,8 @@ body {
               background-color 0.3s ease-out,
               border-color 0.3s ease-out;
   &:hover {
-    background-color: $purple;
-    border-color: $purple;
+    background-color: $main; // $purple;
+    border-color: $main; // $purple;
     color: #fff;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
