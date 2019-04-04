@@ -214,8 +214,10 @@ body {
     margin: 0;
   }
   li {
-    color: $main;
-    font-size: 1.1rem;
+    // color: $main;
+    // font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
   }
   p {
     margin-right: 5px;
