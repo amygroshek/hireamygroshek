@@ -225,6 +225,12 @@ body {
   }
 }
 
+.badges {
+  img {
+    box-shadow: none;
+  }
+}
+
 .images {
   @media only screen and (min-width: $cut) {
     float: right;
