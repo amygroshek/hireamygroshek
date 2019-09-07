@@ -1,6 +1,7 @@
 # Site settings
 title: Amy Groshek
-description: Amy Groshek is a web developer specializing in HUGO, Adapt, SCORM, Moodle, WordPress, and accessibility.
+description: Amy Groshek is a web developer specializing in HUGO, React.js, Gatbsby, Adapt, SCORM, Moodle, WordPress, internationalization, and accessibility.
+keywords: amy, groshek, developer, hugo, golang, adapt, react, gatsby, node, scorm, internationalization, li0n, accessibility, a11y
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
