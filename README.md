@@ -21,6 +21,10 @@ The Theme features:
 2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
 3. Edit `_config.yml` to personalize your site.
 
+## Dependencies
+
+As of right now, node 10 but not node 12 is supported. Downgrade to node 10 to run the local server and make updates.
+
 ## Site and User Settings
 
 You have to fill some informations on `_config.yml` to customize your site.
