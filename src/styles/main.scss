@@ -1,8 +1,20 @@
-$main: #0a35c3; // #0B41F7; // #13a528; // #1a222c;
-$sec: #4B5664;
-$purple: #54516A;
-$cut: 768px;
+// $main: #0a35c3; // #0B41F7; // #13a528; // #1a222c;
+// $sec: #4B5664;
+// $purple: #54516A;
+// $cut: 768px;
 // $link: #0a35c3;
+
+@import "lib/normalize";
+@import "lib/fontawesome";
+@import "lib/devicon";
+
+@import 'base';
+@import 'vars';
+@import 'animation';
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'footer';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -199,12 +211,18 @@ body {
 
 .user-details {
   text-align: center;
-  font-size: 16px;
-  margin: 6rem auto;
+  // font-size: 16px;
+  margin: 6rem auto 3rem;
 }
 
+.user-projects:first-of-type {
+  margin-top: 2rem !important;
+}
 .user-projects {
   margin: 100px auto;// 40px auto;
+  &.first {
+    margin: 60px auto 100px;
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -212,16 +230,20 @@ body {
     box-shadow: 1px 3px 3px #ccc;
   }
   h5 {
-    margin: 0;
+    margin: 2rem 0 0 0;
+    @media (min-width: 550px) {
+      margin: 0;
+    }
   }
   li {
     // color: $main;
-    // font-size: 1.1rem;
-    margin-left: 2rem;
+    font-size: 1.5rem;
+    // margin-left: 2rem;
     margin-bottom: 0;
   }
   p {
     margin-right: 5px;
+    font-size: 1.5rem;
   }
 }
 
@@ -251,12 +273,13 @@ body {
 .project-link {
   display: block;
   width: 100px;
-  margin: 10px 0px;
-  padding: 5px;
+  margin: 10px 0;
+  padding: 5px 15px;
   color: $main;
   background-color: transparent;
   border: 1px solid $main;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -288,6 +311,9 @@ body {
   margin-top: 100px;
   text-align: center;
   color: #FFF;
+  p {
+    font-size: 14px;
+  }
   .love {
     color: red;
   }
@@ -324,14 +350,13 @@ i {
     height: 50px;
 }
 
-@import "lib/normalize";
-@import "lib/fontawesome";
-@import "lib/devicon";
-
-@import 'base';
-@import 'vars';
-@import 'animation';
-@import 'header';
-@import 'about';
-@import 'projects';
-@import 'footer';
+// Fix effed-up formatting from skeleton.css
+.container {
+  @media (min-width: 550px) {
+    width: 98%;
+  }
+  @media (min-width: 760px) {
+    width: 98%;
+    max-width: 1200px;
+  }
+}

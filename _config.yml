@@ -1,13 +1,13 @@
 # Site settings
 title: Amy Groshek
 description: Amy Groshek is a web developer specializing in HUGO, React.js, Gatbsby, Adapt, SCORM, Moodle, WordPress, internationalization, and accessibility.
-keywords: amy, groshek, developer, hugo, golang, adapt, react, gatsby, node, scorm, internationalization, li0n, accessibility, a11y
+keywords: amy, groshek, developer, hugo, golang, adapt, react, gatsby, node, scorm, internationalization, li0n, accessibility, a11y, angular
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Amy Groshek
-user_description: Hi! My name is Amy, and I'm a freelance web developer specializing in the HUGO static site generator, Netlify CMS, a11y, and the Adapt Framework for online learning content. My expertise also includes SCORM, Moodle, and WordPress online learning plugins like LearnDash and Edwiser. I have 10 years of experience in the online learning industry, and I got my start doing front-end and PHP development for the Moodle LMS. What I love most about freelancing is that I am constantly learning new programming langauges and frameworks. I'm enthusiatic about projects that offer me the opportunity to build elegant, efficient, and future-forward solutions. If you ask me for something that's not a very good idea, I'm sure to tell you so. :)
+user_description: <p><strong>Hi! My name is Amy</strong>, and I'm a freelance web developer specializing in static site generators including Gatsby, Jekyll, and HUGO. I have experience with a11y, AWS, Google Analytics, and the Adapt Framework for online learning content. My expertise also includes SCORM, Moodle, and WordPress online learning plugins like LearnDash and Edwiser.</p><p>I have 10 years of experience in the online learning industry, and I got my start doing front-end and PHP development for the Moodle LMS. What I love most about freelancing is that I am constantly learning new programming languages and frameworks. I prefer clients invested in elegant, efficient, and future-forward solutions with minimal technical debt. If you ask me for something that's not a very good idea, I'm sure to tell you so. <strong>;)</strong></p>
 user_title: Web Developer and Online Learning Consultant
 email: amy@amygroshek.com
 twitter_username: amygroshek
@@ -22,6 +22,6 @@ google-analytics:
 exclude: ['package.json', 'src' , 'node_modules']
 
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
 
 # theme: jekyll-theme-cayman
