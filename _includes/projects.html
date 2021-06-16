@@ -1,205 +1,788 @@
 <div class="container">
-    <div class="user-details">
-        <h3> Featured Projects </h3>
+  <div class="user-details">
+    <h3>Featured Projects</h3>
+  </div>
+  <div class="row user-projects first">
+    <div class="six columns images">
+      <img alt="Diversity Data Kids Map" src="/assets/img/ddk.png" />
     </div>
-    <div class="row user-projects first">
-        <div class="six columns">
-            <img alt="Evictionlab PDF and PPTX export contents" src="{{ "/assets/img/eviction-lab-export.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Eviction Lab Custom PDF and PPTX Reports</h5>
-            <p>Another project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. Project features include:</p><ul><li>Update PDF and PPT generation scripts to render confidence interval</li><li>Combine Handlebars templates for more reliable translation</li><li>Update Eviction Lab map to pass confidence interval in request for PDF and PPT exports</li></ul>
-            <p>Skills: Angular, Handlebars, PptxGenJS, Headless Chrome, Typescript</p>
-            <a class="project-link" href="https://evictionlab.org/map/" aria-haspopup target="_blank" aria-label="Eviction Lab map">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Diversity Data Kids National Child Opportunity Map</h5>
+      <p>
+        This map allows users to explore indicators of child opportunity across
+        the United States, with different norming levels for national, state,
+        and metro areas. Features include:
+      </p>
+      <ul>
+        <li>
+          Mapbox map with dynamic, filtered GeoJSON features and dynamic
+          demographic layers
+        </li>
+        <li>
+          <a href="https://github.com/Hyperobjekt/ddk-etl" target="_blank"
+            >Data processing pipeline</a
+          >
+          to convert
+          <a href="https://github.com/Hyperobjekt/ddk-data" target="_blank"
+            >client data sets</a
+          >
+          into Mapbox tilesets
+        </li>
+        <li>Hash routing with localStorage to manage and cache map state</li>
+        <li>Hasy-driven embed state for embedding in other web platforms</li>
+        <li>Responsive, device-targeted interactions and display</li>
+      </ul>
+      <p>
+        Skills: React.js, MapBox, GeoJSON, SCSS, Material UI, Node.js, nwb, npm,
+        Docker
+      </p>
+      <a
+        class="project-link"
+        href="https://diversitydatakids.org/maps/"
+        aria-haspopup=""
+        target="_blank"
+        aria-label="Diversity Data Kids National Child Opportunity Map"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Educational Opportunity Project site" src="{{ "/assets/img/eviction-lab-ci.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Graph and Table Updates for Eviction Lab Map</h5>
-            <p>Another project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. Project features include:</p><ul><li>Calculate and render confidence interval for line and bar chart data</li><li>Add confidence interval to chart tooltips</li><li>Add confidence interval to location cards and tables</li><li>Update Google Analytics tracking data</li><li>Add confidence interval toggle controls</li><li>Create SVG patterns for bar chart confidence interval shading</li></ul>
-            <p>Skills: Angular, d3, Typescript, npm</p>
-            <a class="project-link" href="https://staging.evictionlab.org/" aria-haspopup target="_blank" aria-label="Eviction Lab explorer map">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects first">
+    <div class="six columns images">
+      <img alt="UNTD Social Mobility Explorer" src="/assets/img/untd.png" />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="Evictionlab site" src="{{ "/assets/img/evictionlab-hugo.jpg" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Eviction Lab Hugo Site</h5>
-            <p>Another project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. Project features include:</p><ul><li>Convert HUGO site from gulp build process to native Hugo build</li><li>Update image processing from gulp to native Hugo image processing</li></ul>
-            <p>Skills: HUGO, Golang, gulp</p>
-            <a class="project-link" href="https://evictionlab.org/" aria-haspopup target="_blank" aria-label="Eviction Lab site">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>University of North Texas Social Mobility Hub Map</h5>
+      <p>
+        This map allows users to explore indicators of social mobility in the
+        North Texas region. Project features include:
+      </p>
+      <ul>
+        <li>
+          Mapbox map with dynamic, filtered GeoJSON features and dynamic
+          demographic layers
+        </li>
+        <li>Turf.js to dynamically generate school "zones"</li>
+        <li>Hash routing with localStorage to manage and cache map state</li>
+        <li>User tour with Joyride</li>
+        <li>Responsive, device-targeted interactions and display</li>
+      </ul>
+      <p>
+        Skills: React.js, MapBox, GeoJSON, SCSS, Bootstrap, nwb, npm, Gatsby
+      </p>
+      <a
+        class="project-link"
+        href="https://socialmobility.netlify.app/explorer/"
+        aria-haspopup=""
+        target="_blank"
+        aria-label="Child Poverty Action Lab Explorer"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Educational Opportunity Project Opportunity Explorer PDF Export" src="{{ "/assets/img/seda-pdf-export.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Custom PDF Report Export for The Educational Opportunity Project at Stanford University</h5>
-            <p>Another project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. This project generates custom PDF reports based on locations selected by the user. The report is generated by rendering a Handlebars template in headless Chrome, then printing it to a PDF data stream for download.</p>
-            <p>Skills: Puppeteer, Handlebars, Headless Chrome, node.js, scss, AWS</p>
-            <a class="project-link" href="https://edopportunity.org/" aria-haspopup target="_blank" aria-label="Educational Opportunity Project Opportunity Explorer map">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img
+        alt="Child Poverty Action Lab Explorer"
+        src="/assets/img/cpal-600.png"
+      />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="Educational Opportunity Project site" src="{{ "/assets/img/seda-site.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>The Educational Opportunity Project at Stanford University</h5>
-            <p>Another project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. Project features include:</p><ul><li>HUGO site architecture and styling</li><li>eCharts development and configuration</li><li>React.js component updates</li><li>SVG animation</li><li>jQuery modal dialogs</li><li>Netlify Lambda function, using node.js to register users to MailChimp list</li><li>Google Analytics custom events and tracking with Google Tag Manager</li></ul>
-            <p>Skills: HUGO, eCharts, Golang, Bootstrap, React.js, nodejs, Netlify Functions, Netlify CMS, Google Analytics, Google Tag Manager</p>
-            <a class="project-link" href="https://edopportunity.org/explorer/#/map/us/districts/coh/ses/all/3.5/38/-97" aria-label="The Educational Opportunity Project at Stanford University" aria-haspopup target="_blank">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Child Poverty Action Lab Explorer Map</h5>
+      <p>
+        This map allows users to explore indicators of child opportunity within
+        a school zones, a 2-mile radius around a school, for all schools the
+        Dallas ISD school district. Users can visualize indicators in relation
+        to the distribution of racial and ethnic groups. The project encourages
+        equitable distribution of school bond resources across the district.
+        Project features include:
+      </p>
+      <ul>
+        <li>
+          Mapbox map with dynamic, filtered GeoJSON features and dynamic
+          demographic layers
+        </li>
+        <li>eCharts charting for feeder school data and patterns</li>
+        <li>Turf.js to dynamically generate school "zones"</li>
+        <li>Hash routing with localStorage to manage and cache map state</li>
+        <li>User tour with Joyride</li>
+        <li>Responsive, device-targeted interactions and display</li>
+      </ul>
+      <p>Featured in:</p>
+      <ul>
+        <li>
+          <a
+            href="https://www.dmagazine.com/publications/d-magazine/2020/august/dallas-isds-fight-to-fix-the-most-racist-map-of-dallas/"
+            >D Magazine, August 2020</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.dmagazine.com/frontburner/2020/10/the-most-interesting-part-of-dallas-isds-bond-is-one-of-its-smallest/"
+            >D Magazine, October 2020</a
+          >
+        </li>
+      </ul>
+      <p></p>
+      <p>
+        Skills: React.js, MapBox, GeoJSON, SCSS, Bootstrap, nwb, npm, Gatsby
+      </p>
+      <a
+        class="project-link"
+        href="https://dallasisd.resourceexplorer.org/explorer/"
+        aria-haspopup=""
+        target="_blank"
+        aria-label="Child Poverty Action Lab Explorer"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Dignity + Debt Site react app" src="{{ "/assets/img/loan-debt-spiral.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>React.js App for Princeton University's Dignity + Debt Site</h5>
-            <p>Another project undertaken for the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>, this custom React.js component allows users to compare their student loan debt to that of various US demographics. It also allows users to explore how loan refinancing would affect their payoff timeline and overall payment on a loan.</p>
-            <p>Skills: React.js, HUGO, Golang, Bootstrap, Netlify</p>
-            <a class="project-link" href="https://www.dignityanddebt.org/projects/student-debt-calculator/" aria-haspopup target="_blank" aria-label="Dignity and Debt debt calculator">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img
+        alt="Eviction Lab COVID-19 Housing Policy Scorecard"
+        src="/assets/img/evictionlab-covid-scorecard-02.png"
+      />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="TeachingLab web site" src="{{ "/assets/img/teachinglab-twitter.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Twitter Feed for TeachingLab HUGO Site</h5>
-            <p>TeachingLab wanted to display recent tweets on their site. I wrote JavaScript and a nodejs Netlify Function to fetch the tweets through Twitter's oAuth API, render the tweets, and animate them.</p>
-            <p>Skills: HUGO, Twitter API 2.0, Golang, Bootstrap, React.js, nodejs, Netlify Functions, Netlify CMS</p>
-            <a class="project-link" href="https://www.teachinglab.org/" aria-haspopup target="_blank" aria-label="Teaching Lab site">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Eviction Lab COVID-19 Housing Policy Scorecard</h5>
+      <p>
+        This site feature ranks all US states by COVID-19-related tenant
+        protections (or lack thereof). This interface and the individual state
+        details pages all fetch and render data from a Google spreadsheet of
+        eviction policy data maintained by Eviction Lab. Featured in:
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://s3.amazonaws.com/public-inspection.federalregister.gov/2020-19654.pdf"
+            >CDC Eviction Moratorium (cites Scorecard)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.nytimes.com/2020/09/01/business/eviction-moratorium-order.html"
+            >The New York Times, September 1, 2020</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.nytimes.com/2020/08/07/business/economy/housing-economy-eviction-renters.html"
+            >The New York Times, August 7, 2020</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.nytimes.com/2020/07/04/us/coronavirus-evictions-renters-immigrants.html"
+            >The New York Times, July 4, 2020</a
+          >
+        </li>
+        <li>
+          Hasan Manaj's <i>Patriot Act</i>, (<a
+            href="https://www.youtube.com/watch?v=MPFPBzr7FgY&amp;feature=youtu.be"
+            >episode</a
+          >, <a href="https://www.dontgetkickedout.com">companion site</a>)
+        </li>
+        <li>
+          <a
+            href="https://abcnews.go.com/US/mass-evictions-horizon-us-confronts-coronavirus-housing-crisis/story?id=70367541"
+            >ABC News</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.npr.org/2020/05/01/848247228/rent-is-due-today-but-millions-of-americans-wont-be-paying"
+            >NPR</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.washingtonpost.com/nation/2020/04/29/which-states-are-doing-better-job-protecting-renters-being-evicted-during-coronavirus-pandemic/?arc404=true"
+            >The Washington Post</a
+          >
+        </li>
+      </ul>
+      <p>Skills: jQuery, Bootstrap, Google Sheets API, mobile-first, a11y</p>
+      <a
+        class="project-link"
+        href="https://evictionlab.org/covid-policy-scorecard/"
+        aria-haspopup=""
+        target="_blank"
+        aria-label="Eviction Lab covid-19 housing policy scorecard"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="PrimedIO Site" src="{{ "/assets/img/primedio.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Bespoke Static Site with HUGO</h5>
-            <p>PrimedIO wanted a static site with blazing-fast SEO. They needed  internationalization, Nelify Forms, and were capable of editing blog posts and other content themselves once the site was up and running. This site features extensive CSS work to implement design elements and responsiveness without negatively affecting load time.</p>
-            <p>Skills: HUGO, Golang, CSS, Bootstrap, JavaScript, PHP, JSON, Netlify, Netlify Forms</p>
-            <a class="project-link" href="https://primed.io" aria-haspopup target="_blank" aria-label="primedIO site">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img
+        alt="Evictionlab policy list"
+        src="/assets/img/evictionlab-policy-list.png"
+      />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="Adapt corporate training SCORM" src="{{ "/assets/img/adapt-corporate-training.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>SCORM Corporate Training with Adapt</h5>
-            <p>This corporate client needed SCORM online learning content that would be responsive, WCAG A compliant, and easily translated into several langauges. They selected a subway map theme for content organization, and the content pages reflect this theme by portraying color-coded subway "paths" and subway stop "nodes". I developed several custom Adapt plugins in order to give the client the highly customized format they preferred. These Adapt plugin customizations include:</p><ul><li>A custom question type</li><li>A custom plugin presenting a responsive dialogue between two characters</li><li>A custom "more info" text feature</li><li>Customizations to the hotspotMenu plugin to add graphical progress display overlays on the subway map</li><li>Custom SCORM reporting</li><li>Custom navigation locking</li><li>Schema updates for full translation of the certificate and several other components</li></ul>
-            <p>Skills: SCORM, Adapt, Backbone.js, Mustache, a11y, L10n</p>
-        </div>
+    <div class="six columns contents">
+      <h5>Eviction Lab Policy List</h5>
+      <p>
+        This dynamic table loads a list of national and local Covid-10 eviction
+        policies. Project features include:
+      </p>
+      <ul>
+        <li>Sortable table draws content from Google Spreadsheet</li>
+      </ul>
+      <p>Featured in:</p>
+      <ul>
+        <li>
+          <a
+            href="https://www.nytimes.com/2020/07/11/your-money/coronavirus-eviction-prevention-renters-landlord.html?searchResultPosition=1"
+            >The New York Times</a
+          >
+        </li>
+      </ul>
+      <p></p>
+      <p>Skills: JavaScript, jQuery, AJAX</p>
+      <a
+        class="project-link"
+        href="https://evictionlab.org/covid-eviction-policies/"
+        aria-haspopup=""
+        target="_blank"
+        aria-label="Eviction Lab policy list"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Dignity + Debt Site" src="{{ "/assets/img/dignity-and-debt.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Princeton University's Dignity + Debt Site with HUGO</h5>
-            <p>This was my first project with the talented folks at <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>. This site uses Bootstrap 4 for navigation and layout responsiveness. Content pages loop through custom data files stored outside of the HUGO content directory. Many content fields are editable using Netlify CMS.</p>
-            <p>Skills: HUGO, Golang, CSS, JavaScript, PHP, JSON, Netlify, Netlify CMS</p>
-            <a class="project-link" href="https://dignityanddebt.org" aria-haspopup target="_blank" aria-label="Dignity + Debt site">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Evictionlab PDF and PPTX export contents" src="{{
+      "/assets/img/eviction-lab-export.png" | prepend: site.baseurl }}" />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="User1st accessibility rule documentation site" src="{{ "/assets/img/user1st-docs.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Accessibility Remediation Documentation Site with HUGO</h5>
-            <p>User1st wanted to use a static site generator to create a documentation reference for their automated remediation tool and developer training programs. This site uses a modified version of the DocDock theme. I created a custom template for the rule documentation pages, and wrote a PHP script to convert CSVs of rule documentation into individual markdown files.</p><p>In subsequent updates to this site, I have added a Netlify CMS schema so that a11y criteria are editable via Netlify CMS. I have also added JSON custom content types to output all a11y standards, standards sorted by WCAG guideline, and standards sorted by tag. I have also retooled the navigation menu to sort all items by WCAG Guideline.</p>
-            <p>Skills: HUGO, Golang, CSS, JavaScript, PHP, JSON, Netlify, Netlify CMS, a11y</p>
-            <a class="project-link" href="https://docs.wcag.online" aria-haspopup target="_blank" aria-label="User1st documentation site">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Eviction Lab Custom PDF and PPTX Reports</h5>
+      <p>
+        Another project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        Project features include:
+      </p>
+      <ul>
+        <li>
+          Update PDF and PPT generation scripts to render confidence interval
+        </li>
+        <li>Combine Handlebars templates for more reliable translation</li>
+        <li>
+          Update Eviction Lab map to pass confidence interval in request for PDF
+          and PPT exports
+        </li>
+      </ul>
+      <p>Skills: Angular, Handlebars, PptxGenJS, Headless Chrome, Typescript</p>
+      <a
+        class="project-link"
+        href="https://evictionlab.org/map/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Eviction Lab map"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Laurel's Yoga Site" src="{{ "/assets/img/laurelyoga.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Online Learning Marketplace with LearnDash</h5>
-            <p>Laurel needed a robust online promotion, scheduling, and marketplace solution. The theme Laurel had selected required a custom child theme for additional styling and course enrollment functionality. We did development in stages, using separate production and test environments to handle code pulls and site upgrades. Laurel now earns a significant passive income selling  video courses with the WordPress CMS, combined with WooCommerce and LearnDash plugins.</p>
-            <p>Skills: Wordpress, LearnDash, WooCommerce, PHP, CSS, JavaScript</p>
-            <a class="project-link" href="http://laurelbeversdorf.com/" aria-haspopup target="_blank" aria-label="Laurel's yoga site">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Educational Opportunity Project site" src="{{
+      "/assets/img/eviction-lab-ci.png" | prepend: site.baseurl }}" />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="User1st online learning site" src="{{ "/assets/img/user1st.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Online Accessibility Training Marketplace with Moodle</h5>
-            <p>User1st wanted an online learning environment for the delivery of accessible SCORM training modules. The content we produced needed to meet the exacting accessibility standards advised in the training they contained. We chose the Adapt framework, and when it came time to test the SCORM content for accessibility, I was able to use CSS and JavaScript to alter the Adapt theme and plugins in order to improve screen reader accessibility.</p>
-            <p>Skills: Moodle, Adapt, SCORM, PHP, CSS, JavaScript</p>
-            <a class="project-link" href="https://wcag.online/" aria-haspopup target="_blank" aria-label="User1st Moodle site">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Graph and Table Updates for Eviction Lab Map</h5>
+      <p>
+        Another project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        Project features include:
+      </p>
+      <ul>
+        <li>
+          Calculate and render confidence interval for line and bar chart data
+        </li>
+        <li>Add confidence interval to chart tooltips</li>
+        <li>Add confidence interval to location cards and tables</li>
+        <li>Update Google Analytics tracking data</li>
+        <li>Add confidence interval toggle controls</li>
+        <li>Create SVG patterns for bar chart confidence interval shading</li>
+      </ul>
+      <p>Skills: Angular, d3, Typescript, npm</p>
+      <a
+        class="project-link"
+        href="https://staging.evictionlab.org/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Eviction Lab explorer map"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Morel's Ortho-Bionomy Site" src="{{ "/assets/img/morel.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Wellness Services and Courses with Squarespace</h5>
-            <p>Morel needed a simple web site to advertise her wellness service offerings and in-person traiings.</p>
-            <p>Skills: Squarespace, CSS, JavaScript</p>
-            <a class="project-link" href="http://morelstackhouse.com/" aria-haspopup target="_blank" aria-label="Morel's site">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Evictionlab site" src="{{ "/assets/img/evictionlab-hugo.jpg" |
+      prepend: site.baseurl }}" />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="Amy's Consulting Site" src="{{ "/assets/img/amy-o.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Consulting Services and Information with Squarespace</h5>
-            <p>Amy needed a simple web site to advertise her consulting and analytics offerings. Amy came to me with a very particular aesthetic and image set in mind, and this site required extensive image editing, as well as some font set embedding, to make the site look just right despite the constraints of the Squarespace platform.</p>
-            <p>Skills: Squarespace, CSS, JavaScript</p>
-            <a class="project-link" href="http://silverlynxconsulting.com/" aria-haspopup target="_blank" aria-label="Amy's consulting site">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>Eviction Lab Hugo Site</h5>
+      <p>
+        Another project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        Project features include:
+      </p>
+      <ul>
+        <li>Convert HUGO site from gulp build process to native Hugo build</li>
+        <li>
+          Update image processing from gulp to native Hugo image processing
+        </li>
+      </ul>
+      <p>Skills: HUGO, Golang, gulp</p>
+      <a
+        class="project-link"
+        href="https://evictionlab.org/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Eviction Lab site"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Moodle tracker" src="{{ "/assets/img/sumlogix.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Online Moodle Course Marketplace with Edwiser</h5>
-            <p>SumLogix came to me with a legacy Moodle site and several existing Moodle courses. Their existing WordPress/Moodle integration was no longer functioning, and their Moodle site was long outdated. I manually upgraded the Moodle database through several major versions, updated the WordPress plugins and theme, added a child theme for UX updates, and tested and configured PayPal and Stripe purchase workflows. This site accepts transactions in multiple currencies, using the WordPress Currency Switcher plugin and geolocation to provide the customer with the appropriate currency.</p>
-            <p>Skills: Moodle, WordPress, WooCommerce, Edwiser, PHP, CSS, JavaScript</p>
-            <a class="project-link" href="https://sumlogix.com" aria-haspopup target="_blank" aria-label="Moodle marketplace site">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Educational Opportunity Project Opportunity Explorer PDF Export"
+      src="{{ "/assets/img/seda-pdf-export.png" | prepend: site.baseurl }}" />
     </div>
-    <div class="row user-projects">
-        <div class="six columns">
-            <img alt="Wallaroo Labs Blog" src="{{ "/assets/img/hugo-wallaroo.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns">
-            <h5>Hugo Customizations</h5>
-            <p>Wallaroo Labs needed updates to an existing blog using the Hugo static site generator. I updated the display of individual posts and post indexes. I also added a slideout panel for additional links.</p>
-            <p>Skills: Hugo, golang, CSS, JavaScript</p>
-            <a class="project-link" href="https://blog.wallaroolabs.com/" aria-haspopup target="_blank" aria-label="Wallaroo Labs Blog">Check it out</a>
-        </div>
+    <div class="six columns contents">
+      <h5>
+        Custom PDF Report Export for The Educational Opportunity Project at
+        Stanford University
+      </h5>
+      <p>
+        Another project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        This project generates custom PDF reports based on locations selected by
+        the user. The report is generated by rendering a Handlebars template in
+        headless Chrome, then printing it to a PDF data stream for download.
+      </p>
+      <p>Skills: Puppeteer, Handlebars, Headless Chrome, node.js, scss, AWS</p>
+      <a
+        class="project-link"
+        href="https://edopportunity.org/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Educational Opportunity Project Opportunity Explorer map"
+        >Check it out</a
+      >
     </div>
-    <div class="row user-projects">
-        <div class="six columns images">
-            <img alt="Moodle tracker" src="{{ "/assets/img/mdl_tracker.png" | prepend: site.baseurl }}" />
-        </div>
-        <div class="six columns contents">
-            <h5>Moodle Core Contributions</h5>
-            <p>I have made <a href="https://moodle.org/dev/gitcommits.php?version=x.x.x&userid=159280&merges=0">13 contributions</a> to Moodle core. <a href="https://tracker.moodle.org/browse/MDL-57785">MDL-57785</a> reduces the server load resulting from SCORM content access by eliminating a navigation menu refresh when the navigation menu is not shown in the display. <a href="https://tracker.moodle.org/browse/MDL-60478">MDL-60478</a> improves performance of the network connectivity check performed during SCORM sessions, increasing the interval at which checks were performed, increasing the request timeout value to prevent false positives, and reducing the default number of alerts shown to 1.</p>
-            <p>Skills: PHP, YUI, JavaScript, Grunt, git, Travis, SCORM</p>
-            <a class="project-link" href="https://tracker.moodle.org/browse/MDL-60478" aria-haspopup target="_blank" aria-label="Moodle tracker task">Check it out</a>
-        </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Educational Opportunity Project site" src="{{
+      "/assets/img/seda-site.png" | prepend: site.baseurl }}" />
     </div>
-    <div class="row user-projects treehouse-badges">
-        <div class="report-card treehouse"></div>
+    <div class="six columns contents">
+      <h5>The Educational Opportunity Project at Stanford University</h5>
+      <p>
+        Another project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        Project features include:
+      </p>
+      <ul>
+        <li>HUGO site architecture and styling</li>
+        <li>eCharts development and configuration</li>
+        <li>React.js component updates</li>
+        <li>SVG animation</li>
+        <li>jQuery modal dialogs</li>
+        <li>
+          Netlify Lambda function, using node.js to register users to MailChimp
+          list
+        </li>
+        <li>
+          Google Analytics custom events and tracking with Google Tag Manager
+        </li>
+      </ul>
+      <p>
+        Skills: HUGO, eCharts, Golang, Bootstrap, React.js, nodejs, Netlify
+        Functions, Netlify CMS, Google Analytics, Google Tag Manager
+      </p>
+      <a
+        class="project-link"
+        href="https://edopportunity.org/explorer/#/map/us/districts/coh/ses/all/3.5/38/-97"
+        aria-label="The Educational Opportunity Project at Stanford University"
+        aria-haspopup
+        target="_blank"
+        >Check it out</a
+      >
     </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Dignity + Debt Site react app" src="{{
+      "/assets/img/loan-debt-spiral.png" | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>React.js App for Princeton University's Dignity + Debt Site</h5>
+      <p>
+        Another project undertaken for the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>,
+        this custom React.js component allows users to compare their student
+        loan debt to that of various US demographics. It also allows users to
+        explore how loan refinancing would affect their payoff timeline and
+        overall payment on a loan.
+      </p>
+      <p>Skills: React.js, HUGO, Golang, Bootstrap, Netlify</p>
+      <a
+        class="project-link"
+        href="https://www.dignityanddebt.org/projects/student-debt-calculator/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Dignity and Debt debt calculator"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="TeachingLab web site" src="{{
+      "/assets/img/teachinglab-twitter.png" | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Twitter Feed for TeachingLab HUGO Site</h5>
+      <p>
+        TeachingLab wanted to display recent tweets on their site. I wrote
+        JavaScript and a nodejs Netlify Function to fetch the tweets through
+        Twitter's oAuth API, render the tweets, and animate them.
+      </p>
+      <p>
+        Skills: HUGO, Twitter API 2.0, Golang, Bootstrap, React.js, nodejs,
+        Netlify Functions, Netlify CMS
+      </p>
+      <a
+        class="project-link"
+        href="https://www.teachinglab.org/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Teaching Lab site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="PrimedIO Site" src="{{ "/assets/img/primedio.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Bespoke Static Site with HUGO</h5>
+      <p>
+        PrimedIO wanted a static site with blazing-fast SEO. They needed
+        internationalization, Nelify Forms, and were capable of editing blog
+        posts and other content themselves once the site was up and running.
+        This site features extensive CSS work to implement design elements and
+        responsiveness without negatively affecting load time.
+      </p>
+      <p>
+        Skills: HUGO, Golang, CSS, Bootstrap, JavaScript, PHP, JSON, Netlify,
+        Netlify Forms
+      </p>
+      <a
+        class="project-link"
+        href="https://primed.io"
+        aria-haspopup
+        target="_blank"
+        aria-label="primedIO site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Adapt corporate training SCORM" src="{{
+      "/assets/img/adapt-corporate-training.png" | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>SCORM Corporate Training with Adapt</h5>
+      <p>
+        This corporate client needed SCORM online learning content that would be
+        responsive, WCAG A compliant, and easily translated into several
+        langauges. They selected a subway map theme for content organization,
+        and the content pages reflect this theme by portraying color-coded
+        subway "paths" and subway stop "nodes". I developed several custom Adapt
+        plugins in order to give the client the highly customized format they
+        preferred. These Adapt plugin customizations include:
+      </p>
+      <ul>
+        <li>A custom question type</li>
+        <li>
+          A custom plugin presenting a responsive dialogue between two
+          characters
+        </li>
+        <li>A custom "more info" text feature</li>
+        <li>
+          Customizations to the hotspotMenu plugin to add graphical progress
+          display overlays on the subway map
+        </li>
+        <li>Custom SCORM reporting</li>
+        <li>Custom navigation locking</li>
+        <li>
+          Schema updates for full translation of the certificate and several
+          other components
+        </li>
+      </ul>
+      <p>Skills: SCORM, Adapt, Backbone.js, Mustache, a11y, L10n</p>
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Dignity + Debt Site" src="{{ "/assets/img/dignity-and-debt.png"
+      | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Princeton University's Dignity + Debt Site with HUGO</h5>
+      <p>
+        This was my first project with the talented folks at
+        <a href="https://www.hyperobjekt.com/" target="_blank">Hyperobjekt</a>.
+        This site uses Bootstrap 4 for navigation and layout responsiveness.
+        Content pages loop through custom data files stored outside of the HUGO
+        content directory. Many content fields are editable using Netlify CMS.
+      </p>
+      <p>
+        Skills: HUGO, Golang, CSS, JavaScript, PHP, JSON, Netlify, Netlify CMS
+      </p>
+      <a
+        class="project-link"
+        href="https://dignityanddebt.org"
+        aria-haspopup
+        target="_blank"
+        aria-label="Dignity + Debt site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="User1st accessibility rule documentation site" src="{{
+      "/assets/img/user1st-docs.png" | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Accessibility Remediation Documentation Site with HUGO</h5>
+      <p>
+        User1st wanted to use a static site generator to create a documentation
+        reference for their automated remediation tool and developer training
+        programs. This site uses a modified version of the DocDock theme. I
+        created a custom template for the rule documentation pages, and wrote a
+        PHP script to convert CSVs of rule documentation into individual
+        markdown files.
+      </p>
+      <p>
+        In subsequent updates to this site, I have added a Netlify CMS schema so
+        that a11y criteria are editable via Netlify CMS. I have also added JSON
+        custom content types to output all a11y standards, standards sorted by
+        WCAG guideline, and standards sorted by tag. I have also retooled the
+        navigation menu to sort all items by WCAG Guideline.
+      </p>
+      <p>
+        Skills: HUGO, Golang, CSS, JavaScript, PHP, JSON, Netlify, Netlify CMS,
+        a11y
+      </p>
+      <a
+        class="project-link"
+        href="https://docs.wcag.online"
+        aria-haspopup
+        target="_blank"
+        aria-label="User1st documentation site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Laurel's Yoga Site" src="{{ "/assets/img/laurelyoga.png" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Online Learning Marketplace with LearnDash</h5>
+      <p>
+        Laurel needed a robust online promotion, scheduling, and marketplace
+        solution. The theme Laurel had selected required a custom child theme
+        for additional styling and course enrollment functionality. We did
+        development in stages, using separate production and test environments
+        to handle code pulls and site upgrades. Laurel now earns a significant
+        passive income selling video courses with the WordPress CMS, combined
+        with WooCommerce and LearnDash plugins.
+      </p>
+      <p>Skills: Wordpress, LearnDash, WooCommerce, PHP, CSS, JavaScript</p>
+      <a
+        class="project-link"
+        href="http://laurelbeversdorf.com/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Laurel's yoga site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="User1st online learning site" src="{{ "/assets/img/user1st.png"
+      | prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Online Accessibility Training Marketplace with Moodle</h5>
+      <p>
+        User1st wanted an online learning environment for the delivery of
+        accessible SCORM training modules. The content we produced needed to
+        meet the exacting accessibility standards advised in the training they
+        contained. We chose the Adapt framework, and when it came time to test
+        the SCORM content for accessibility, I was able to use CSS and
+        JavaScript to alter the Adapt theme and plugins in order to improve
+        screen reader accessibility.
+      </p>
+      <p>Skills: Moodle, Adapt, SCORM, PHP, CSS, JavaScript</p>
+      <a
+        class="project-link"
+        href="https://wcag.online/"
+        aria-haspopup
+        target="_blank"
+        aria-label="User1st Moodle site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Morel's Ortho-Bionomy Site" src="{{ "/assets/img/morel.png" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Wellness Services and Courses with Squarespace</h5>
+      <p>
+        Morel needed a simple web site to advertise her wellness service
+        offerings and in-person traiings.
+      </p>
+      <p>Skills: Squarespace, CSS, JavaScript</p>
+      <a
+        class="project-link"
+        href="http://morelstackhouse.com/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Morel's site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Amy's Consulting Site" src="{{ "/assets/img/amy-o.png" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Consulting Services and Information with Squarespace</h5>
+      <p>
+        Amy needed a simple web site to advertise her consulting and analytics
+        offerings. Amy came to me with a very particular aesthetic and image set
+        in mind, and this site required extensive image editing, as well as some
+        font set embedding, to make the site look just right despite the
+        constraints of the Squarespace platform.
+      </p>
+      <p>Skills: Squarespace, CSS, JavaScript</p>
+      <a
+        class="project-link"
+        href="http://silverlynxconsulting.com/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Amy's consulting site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Moodle tracker" src="{{ "/assets/img/sumlogix.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Online Moodle Course Marketplace with Edwiser</h5>
+      <p>
+        SumLogix came to me with a legacy Moodle site and several existing
+        Moodle courses. Their existing WordPress/Moodle integration was no
+        longer functioning, and their Moodle site was long outdated. I manually
+        upgraded the Moodle database through several major versions, updated the
+        WordPress plugins and theme, added a child theme for UX updates, and
+        tested and configured PayPal and Stripe purchase workflows. This site
+        accepts transactions in multiple currencies, using the WordPress
+        Currency Switcher plugin and geolocation to provide the customer with
+        the appropriate currency.
+      </p>
+      <p>
+        Skills: Moodle, WordPress, WooCommerce, Edwiser, PHP, CSS, JavaScript
+      </p>
+      <a
+        class="project-link"
+        href="https://sumlogix.com"
+        aria-haspopup
+        target="_blank"
+        aria-label="Moodle marketplace site"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Wallaroo Labs Blog" src="{{ "/assets/img/hugo-wallaroo.png" |
+      prepend: site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Hugo Customizations</h5>
+      <p>
+        Wallaroo Labs needed updates to an existing blog using the Hugo static
+        site generator. I updated the display of individual posts and post
+        indexes. I also added a slideout panel for additional links.
+      </p>
+      <p>Skills: Hugo, golang, CSS, JavaScript</p>
+      <a
+        class="project-link"
+        href="https://blog.wallaroolabs.com/"
+        aria-haspopup
+        target="_blank"
+        aria-label="Wallaroo Labs Blog"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <img alt="Moodle tracker" src="{{ "/assets/img/mdl_tracker.png" | prepend:
+      site.baseurl }}" />
+    </div>
+    <div class="six columns contents">
+      <h5>Moodle Core Contributions</h5>
+      <p>
+        I have made
+        <a
+          href="https://moodle.org/dev/gitcommits.php?version=x.x.x&userid=159280&merges=0"
+          >13 contributions</a
+        >
+        to Moodle core.
+        <a href="https://tracker.moodle.org/browse/MDL-57785">MDL-57785</a>
+        reduces the server load resulting from SCORM content access by
+        eliminating a navigation menu refresh when the navigation menu is not
+        shown in the display.
+        <a href="https://tracker.moodle.org/browse/MDL-60478">MDL-60478</a>
+        improves performance of the network connectivity check performed during
+        SCORM sessions, increasing the interval at which checks were performed,
+        increasing the request timeout value to prevent false positives, and
+        reducing the default number of alerts shown to 1.
+      </p>
+      <p>Skills: PHP, YUI, JavaScript, Grunt, git, Travis, SCORM</p>
+      <a
+        class="project-link"
+        href="https://tracker.moodle.org/browse/MDL-60478"
+        aria-haspopup
+        target="_blank"
+        aria-label="Moodle tracker task"
+        >Check it out</a
+      >
+    </div>
+  </div>
+  <div class="row user-projects treehouse-badges">
+    <div class="report-card treehouse"></div>
+  </div>
 </div>
